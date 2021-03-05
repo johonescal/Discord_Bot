@@ -8,11 +8,12 @@ async def on_message(message):
     if message.author == client.user:
         return
 
-    anlys: int = 0
-    #anlys: int = analysis.main(message.content)
+    anlys: int = analysis.main(message.content)
 
     if anlys == 0:
         await message.delete()
         await message.channel.send(message.author.mention + 'モラルが守れていないメッセージを削除しました。')
+    else:
+        pass
 
 client.run(os.environ.get('discord_token'))
