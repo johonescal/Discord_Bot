@@ -1,6 +1,8 @@
 import discord
 import os
 
+import analysis
+
 client = discord.Client()
 
 @client.event
