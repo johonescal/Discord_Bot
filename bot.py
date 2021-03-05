@@ -14,7 +14,7 @@ async def on_message(message):
 
     if anlys == 1:
         await message.delete()
-        await message.channel.send(message.author.mention + 'モラルが守れていないメッセージを削除しました。')
+        await message.channel.send(message.author.mention + ' カレーの話をしてないので、メッセージを削除しました。')
     else:
         pass
 
