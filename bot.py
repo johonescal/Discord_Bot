@@ -1,7 +1,7 @@
 import discord
 import os
 
-import analysis
+import analysis_curry
 
 client = discord.Client()
 
@@ -10,7 +10,7 @@ async def on_message(message):
     if message.author == client.user:
         return
 
-    anlys: int = analysis.main(message.content)
+    anlys: int = analysis_curry.main(message.content)
 
     if anlys == 0:
         await message.delete()
