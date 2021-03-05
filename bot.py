@@ -6,7 +6,8 @@ client = discord.Client()
 
 @client.event
 async def on_message(message):
-    anlys: int = analysis.main(message.content)
+    analys: int = 0
+    #anlys: int = analysis.main(message.content)
 
     if anlys == 0:
         await message.delete()
