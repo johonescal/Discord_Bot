@@ -12,7 +12,7 @@ async def on_message(message):
 
     anlys: int = analysis_curry.main(message.content)
 
-    if anlys == 0:
+    if anlys == 1:
         await message.delete()
         await message.channel.send(message.author.mention + 'モラルが守れていないメッセージを削除しました。')
     else:
