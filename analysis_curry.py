@@ -11,10 +11,6 @@ def main(discord_msg: str):
 
         if return_str == 'カレー':
             return 0
-        else:
-            pass
-        
-    return 1
 
 
 # 単語の正規化をする関数
