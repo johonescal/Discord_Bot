@@ -15,7 +15,5 @@ async def on_message(message):
     if anlys == 1:
         await message.delete()
         await message.channel.send(message.author.mention + ' カレーの話をしてないので、メッセージを削除しました。')
-    else:
-        pass
 
 client.run(os.environ.get('discord_token'))
